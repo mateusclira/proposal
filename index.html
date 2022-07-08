@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC>
 <!--
 	Astral by HTML5 UP
 	html5up.net | @ajlkn
@@ -33,8 +33,8 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Mateus e Roberta</h1>
-									<button>Curiosidades sobre nós dois</button>
-									<div> Texto vai vir aqui</div>
+									<button onclick="Curiosidades()"> Curiosidades sobre nós dois</button>
+									<div id="curiosidades">  </div>
 								</header>
 								<a href="#momentos" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my momentos</span></span>
@@ -55,7 +55,7 @@
 									adulto se não fosse por estar com você, belzinha?
 								</p>
 								<section>
-									<div class="row">
+									<div class="flex-container" align="center">
 										<div class="col-6 col-10-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
@@ -107,7 +107,7 @@
 									</div>
 
 
-									<Div align="center">	
+									<h3 align="center">	
 										<br>Me perco no seu sorriso 
 										<br>Me perco no seu olhar
 										<br>Me perco no seu olhar 
@@ -128,7 +128,7 @@
 										<br>Hoje decidimos nos unir
 										<br>Há 6 anos somos um casal
 										<br>Hoje somos um.</br>
-									</Div>
+									</h3>
 								</section>
 							</article>
 
@@ -177,6 +177,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function Curiosidades(){
+					mode: 'no-cors'
+					console.log("teste")
+					const URL_TO_FETCH = 'http://localhost:8087/belzinha';
+					var radr;
+					document.onreadystatechange = function() {
+					if(document.readyState === 'interactive'){
+					fetch(URL_TO_FETCH, {
+						method: 'get'	
+					})
+					
+					.then(data => data.json())
+					.then(json => radr = JSON.stringify(json))
+        				document.getElementById('curiosidades').innerHTML = radr
+					//	var curiosidade = element.innerHTML
+					// .then(data => {
+					// 	document.getElementById("curiosidades").innerHTML =
+					// })			
+				}
+			}
+		}
+					
+
+			</script>
 
 	</body>
 </html>
