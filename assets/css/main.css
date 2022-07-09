@@ -1547,21 +1547,21 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		display: inline-block;
+		display: table-row-group;
 	}
 
 		.image img {
-			display: block;
-			width: 80%;
+			display: table-row-group;
+			width: 100%;
 		}
 
 		.image.fit {
-			display: block;
+			display: table-row-group;
 			width: 100%;
 		}
 
 		.image.featured {
-			display: block;
+			display: table-row-group;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}

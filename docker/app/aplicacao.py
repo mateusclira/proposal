@@ -40,3 +40,4 @@ async def belzinha():
         "statusCode":200,
         "curiosidade":random.choice(curiosidades)
     }
+    

@@ -34,10 +34,10 @@
 								<header>
 									<h1>Mateus e Roberta</h1>
 									<button onclick="Curiosidades()"> Curiosidades sobre nós dois</button>
-									<div id="curiosidades">  </div>
+									<div id="curiosidades"> </div>
 								</header>
 								<a href="#momentos" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my momentos</span></span>
+									<span class="arrow icon solid fa-chevron-right"><span>Momentos</span></span>
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
@@ -55,53 +55,53 @@
 									adulto se não fosse por estar com você, belzinha?
 								</p>
 								<section>
-									<div class="flex-container" align="center">
+									<div class="row" align="center">
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic01.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic04.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic12.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic08.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic07.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic06.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic05.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic02.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic11.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic10.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic09.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+											<a  class="image fit"><img src="images/pic03.jpg" alt=""></a>
 											<div> Aqui estávamos completando etc</div>
 										</div>
 									</div>
@@ -113,8 +113,8 @@
 										<br>Me perco no seu olhar 
 										<br>Me perco quando estou contigo. </br>
 
-										<br>Me encontrei no seu sorriso
-										<br>Me encontrei no seu olhar
+										<br>Me encontro no seu sorriso
+										<br>Me encontro no seu olhar
 										<br>Me encontro quando estou contigo.</br>
 									
 
@@ -129,6 +129,7 @@
 										<br>Há 6 anos somos um casal
 										<br>Hoje somos um.</br>
 									</h3>
+									<p align = "right"> de Mateus para Belzinha </p>
 								</section>
 							</article>
 
@@ -179,29 +180,24 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				function Curiosidades(){
-					mode: 'no-cors'
-					console.log("teste")
-					const URL_TO_FETCH = 'http://localhost:8087/belzinha';
-					var radr;
-					document.onreadystatechange = function() {
-					if(document.readyState === 'interactive'){
-					fetch(URL_TO_FETCH, {
-						method: 'get'	
-					})
-					
-					.then(data => data.json())
-					.then(json => radr = JSON.stringify(json))
-        				document.getElementById('curiosidades').innerHTML = radr
-					//	var curiosidade = element.innerHTML
-					// .then(data => {
-					// 	document.getElementById("curiosidades").innerHTML =
-					// })			
-				}
-			}
-		}
-					
+					//mode: 'no-cors'
+					//const URL_TO_FETCH = 'http://localhost:8087/belzinha';
+					var dado;
+					var result;
+					fetch("http://localhost:8087/belzinha")
+					.then(dataWrappedByPromise => dataWrappedByPromise.text())
+					.then(data => {
+						console.log(data)
+						var choices =  data.parse();
+        				console.log(choices);
 
+
+
+					});					
+					//response = JSON.parse(JSON.stringify(response))
+					//result = Promise.all(response.text())
+					//document.getElementById("curiosidades").innerHTML = result	
+					}
 			</script>
-
 	</body>
 </html>
