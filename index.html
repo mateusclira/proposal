@@ -19,11 +19,11 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#" class="icon solid fa-exclamation"><span>Curiosidades</span></a>
 						<a href="#momentos" class="icon solid fa-heart"><span>Momentos</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Mensagem</span></a>
-						<a href="https://www.instagram.com/mateusclira/" class="icon brands fa-instagram"><span>Mateus</span></a>
-						<a href="https://www.instagram.com/roberta__viana/" class="icon brands fa-instagram"><span>Roberta</span></a>
+						<a href="https://www.instagram.com/mateusclira/" target = "blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span>Mateus</span></a>
+						<a href="https://www.instagram.com/roberta__viana/" target = "blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span>Roberta</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -31,10 +31,12 @@
 
 						<!-- Us -->
 							<article id="home" class="panel intro">
-								<header>
-									<h1>Mateus e Roberta</h1>
-									<button onclick="Curiosidades()"> Curiosidades sobre nós dois</button>
-									<div id="curiosidades"> </div>
+								<header align="center">
+									<h1 >Mateus e Roberta</h1>
+									<br>
+									<button  onclick="Curiosidades()" >Clique para obter uma curiosidade</button>
+									<br><br>
+									<h6 align="left" id="curiosidades" value="curiosidade_belzinha"></h6>
 								</header>
 								<a href="#momentos" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>Momentos</span></span>
@@ -45,71 +47,66 @@
 						<!-- Momentos -->
 							<article id="momentos" class="panel">
 								<header>
-									<h2>Momentos</h2>
+									<h1 align = "center">Momentos</h1>
 								</header>
-								<p>
-									Estes aqui são nossos momentos mais marcantes ao longo dos últimos 6 anos do nosso relacionamento.
-									Vivemos muita coisa juntos, crescemos juntos, nos tornamos cada vez mais adultos. 
-
-									Dessa forma, hoje, resolvi demonstrar esse carinho por ela, pois de que forma mais eu estaria me tornando
-									adulto se não fosse por estar com você, belzinha?
-								</p>
+								<h4>
+									Estes aqui são alguns dos nossos momentos ao longo de 6 anos do nosso relacionamento.
+									Vivemos muita coisa juntos, crescemos juntos, nos tornamos cada vez mais adultos.<br><br>
+								</h4>
 								<section>
 									<div class="row" align="center">
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic01.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
+											<div align = 'left'>
+												<ul>
+													<li><b>Fazendo pose no casamento da irmã :)</b></li>
+												<li><b>Será que estávamos treinando?</b></li>
+												<li><b>O que será que estava em minha mente?</b></li>
+											</ul>
+											</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic04.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
+											<div> <b>Logo após o pedido de namoro</b></div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic12.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic08.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic07.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic06.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic05.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
+											<div> <b>Harry Potter e sua princesa Leia</b></div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic02.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic11.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic10.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic09.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
+											<div> <b>Nosso primeiro aninho juntos</b></div>
 										</div>
 										<div class="col-6 col-10-medium col-12-small">
 											<a  class="image fit"><img src="images/pic03.jpg" alt=""></a>
-											<div> Aqui estávamos completando etc</div>
+											<div> <b>Nosso primeiro fim de semana como namorados</b></div>
 										</div>
 									</div>
-
-
-									<h3 align="center">	
+									
+									 
+									<h3 id ="soneto" align="center" style="color:white">	
 										<br>Me perco no seu sorriso 
-										<br>Me perco no seu olhar
 										<br>Me perco no seu olhar 
 										<br>Me perco quando estou contigo. </br>
 
@@ -120,7 +117,7 @@
 
 										<br>Na vida estamos sempre a sós 
 										<br>Espero estar sempre a sós contigo
-										<br>O que somos nós dois se não vida
+										<br>O que somos nós dois, se não vida
 										<br>Que sua vida em minha haja abrigo.</br>
 									
 								
@@ -136,7 +133,8 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>Nos mande uma mensagem! </h2>
+									<h3>Pode escrever uma curiosidade nossa :)</h3>
 								</header>
 								<form action="https://getform.io/f/a87982ff-5d7c-4d50-bce9-1f1cf87e566e" method="post"
 								enctype="multipart/form-data"
@@ -145,16 +143,16 @@
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Nome" />
 											</div>
 											<div class="col-6 col-12-medium">
 												<input type="text" name="email" placeholder="Email (opcional)" />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" placeholder="Messagem" rows="6"></textarea>
 											</div>
 											<div class="col-12">
-												<input type="submit" value="Send Message" />
+												<input type="submit" value="Enviar Messagem" />
 											</div>
 										</div>
 									</div>
@@ -166,7 +164,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Mateus e Roberta.</li><li>Código aberto: <a href="https://github.com/mateusclira/belzinha">github.com/mateusclira</a></li>
 						</ul>
 					</div>
 
@@ -185,18 +183,19 @@
 					var dado;
 					var result;
 					fetch("http://localhost:8087/belzinha")
-					.then(dataWrappedByPromise => dataWrappedByPromise.text())
+					.then(dataWrappedByPromise => dataWrappedByPromise.json())
 					.then(data => {
 						console.log(data)
-						var choices =  data.parse();
-        				console.log(choices);
-
-
+						curiosidades =  data.curiosidade;
+        				console.log(curiosidades);
+						curiosidade_belzinha = document.write.curiosidades
+						document.getElementById("curiosidades").innerHTML = curiosidades
 
 					});					
 					//response = JSON.parse(JSON.stringify(response))
 					//result = Promise.all(response.text())
-					//document.getElementById("curiosidades").innerHTML = result	
+					//
+					return curiosidades	
 					}
 			</script>
 	</body>

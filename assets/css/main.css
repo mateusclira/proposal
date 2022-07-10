@@ -1331,6 +1331,11 @@ input, select, textarea {
 		font-size: 20pt;
 		line-height: 1.75em;
 	}
+	#soneto {
+		background-color: #366aa5;
+		background-size: auto;
+		border: solid 100px #ddd;
+	}
 
 		@media screen and (max-width: 1680px) {
 
@@ -1594,9 +1599,9 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
+		background-color: #1f73d3;
 		color: #ffffff;
-		border: 0;
+		border: 2;
 		cursor: pointer;
 		outline: 0;
 		padding: 0.7em 1.5em 0.7em 1.5em;
@@ -1607,7 +1612,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: #575555;
 		}
 
 		input[type="button"]:active,
@@ -1655,8 +1660,8 @@ input, select, textarea {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 1.25em;
-			padding: 0.5em 1.25em 0.5em 1.25em;
+			font-size: 1.75em;
+			padding: 1.5em 1.25em 0.5em 1.75em;
 		}
 
 		input[type="button"].xlarge,
@@ -2049,7 +2054,7 @@ input, select, textarea {
 						height: 2.75em;
 						background: #000;
 						background: rgba(0, 0, 0, 0.75);
-						color: #ffffff;
+						color: #479ba7;
 						text-align: center;
 						line-height: 2.75em;
 						font-size: 1.5em;
@@ -2101,7 +2106,7 @@ input, select, textarea {
 						margin: 0.25em 0 0 0;
 					}
 
-				@media screen and (max-width: 980px) {
+				@media screen and (max-width: 1080px) {
 
 					#main > .panel.intro {
 						-moz-flex-direction: column;
