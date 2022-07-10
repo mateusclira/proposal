@@ -1327,14 +1327,39 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;
+		color: #777777;	
 		font-size: 20pt;
 		line-height: 1.75em;
+	}
+	#home{
+		background-color: #b6ae6cb0;
+		font-style: italic;
+		color:#000000;
+	}
+
+	#title {
+		font-style: italic;
+		color:#000000;
 	}
 	#soneto {
 		background-color: #366aa5;
 		background-size: auto;
-		border: solid 100px #ddd;
+		border: solid 50px rgb(190, 194, 138);
+	}
+	#momentos {
+		background-color: #ddd589b0;
+		color:#000000;
+	}
+
+	#contact{
+			background-color: #c7bf7db0;
+	}
+
+	
+	#curiosidades{
+		background-size: auto;
+		background-color: #f0e693b0;
+		border-radius: 5%;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1482,7 +1507,7 @@ input, select, textarea {
 	form textarea {
 		-webkit-appearance: none;
 		border: 0;
-		background: #f4f4f4;
+		background:#8a8989;
 		padding: 0.75em;
 		width: 100%;
 		-moz-transition: background-color .25s ease-in-out;
@@ -1507,15 +1532,15 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #999;
+		color: rgb(255, 255, 255);
 	}
 
 	form :-moz-placeholder {
-		color: #999;
+		color: rgb(255, 253, 253);
 	}
 
 	form ::-moz-placeholder {
-		color: #999;
+		color: rgb(255, 255, 255);
 	}
 
 	form :-ms-input-placeholder {
@@ -1599,9 +1624,9 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #1f73d3;
-		color: #ffffff;
-		border: 2;
+		background-color: #000000;
+		color: rgb(255, 255, 255);
+		border-radius: 5%;
 		cursor: pointer;
 		outline: 0;
 		padding: 0.7em 1.5em 0.7em 1.5em;
@@ -1952,7 +1977,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		background: #ffffff;
+		background: #b6ae6cb0;
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2052,9 +2077,9 @@ input, select, textarea {
 						margin-top: -1.375em;
 						width: 2.75em;
 						height: 2.75em;
-						background: #000;
-						background: rgba(0, 0, 0, 0.75);
-						color: #479ba7;
+						background: #b6ae6cb0;
+						background: #b6ae6cb0;
+						color: #000000;
 						text-align: center;
 						line-height: 2.75em;
 						font-size: 1.5em;
