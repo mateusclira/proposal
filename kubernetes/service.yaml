@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadada:
+  name: apisvc
+spec:
+  type: LoadBalancer
+  selector:
+    app: belzinha
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8087
