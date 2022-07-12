@@ -1332,8 +1332,12 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 	#home{
-		background-color: #b6ae6cb0;
+		background-color: #eecdaec2;
 		font-style: italic;
+		color:#000000;
+	}
+	#pics{
+		background-color: #ceb297c2;
 		color:#000000;
 	}
 
@@ -1344,21 +1348,21 @@ input, select, textarea {
 	#soneto {
 		background-color: #366aa5;
 		background-size: auto;
-		border: solid 50px rgb(165, 168, 120);
+		border: solid 50px #eecdaec2;
 	}
 	#momentos {
-		background-color: #ddd589b0;
+		background-color: #eecdaec2;
 		color:#000000;
 	}
 
 	#contact{
-			background-color: #c7bf7db0;
+			background-color: #eecdaec2;
 	}
 
 	
 	#curiosidades{
 		background-size: auto;
-		background-color: #f0e693b0;
+		background-color: #eecdaec2;
 		border-radius: 5%;
 	}
 
@@ -1977,7 +1981,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		background: #b6ae6cb0;
+		background: #eecdaec2;
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2077,8 +2081,8 @@ input, select, textarea {
 						margin-top: -1.375em;
 						width: 2.75em;
 						height: 2.75em;
-						background: #b6ae6cb0;
-						background: #b6ae6cb0;
+						background: #eecdaec2;
+						background: #eecdaec2;
 						color: #000000;
 						text-align: center;
 						line-height: 2.75em;
