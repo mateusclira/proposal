@@ -11,11 +11,11 @@ spec:
       app: belzinha
   template:
     metadata:
-      label:
+      labels:
         app: belzinha
     spec:
       containers:
         - name: webserverapi
-          image: mateusclira/api-da-belzinha:v2
+          image: mateusclira/api-da-belzinha:v4
           ports:
           - containerPort: 8087
