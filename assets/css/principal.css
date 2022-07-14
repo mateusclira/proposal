@@ -1523,6 +1523,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #f8f8f8;
+			color: #363636;
 		}
 
 	form input[type="text"],
