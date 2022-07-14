@@ -1327,7 +1327,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;	
+		color: #eecdaec2;	
 		font-size: 20pt;
 		line-height: 1.75em;
 	}
@@ -1355,16 +1355,13 @@ input, select, textarea {
 		color:#000000;
 	}
 
-	#contact{
+	#mensagem{
 			background-color: #eecdaec2;
+			background-size: auto;
 	}
 
 	
-	#curiosidades{
-		background-size: auto;
-		background-color: #eecdaec2;
-		border-radius: 5%;
-	}
+
 
 		@media screen and (max-width: 1680px) {
 
