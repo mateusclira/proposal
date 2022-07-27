@@ -1,2 +1,0 @@
-1- kubectl create namespace belzinha
-2- kubectl apply -f kubernetes -n belzinha
