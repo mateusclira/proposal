@@ -1,14 +1,35 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: managed-cert-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "mateusebelzinha.com.br"
-    networking.gke.io/managed-certificates: managed-cert
-    kubernetes.io/ingress.class: "gce"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: mateusclira
+  namespace: default
 spec:
-  defaultBackend:
-    service:
-      name: apisvc
-      port:
-        number: 8087
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - www.mateusebelzinha.com.br/
+    secretName: mateuscliratls
+  rules:
+  - host: www.mateusebelzinha.com.br/
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: svc-site
+            port: 
+              number: 80
+  rules:
+  - host: www.mateusebelzinha.com.br/
+    http:
+      paths:
+      - path: /belzinha
+        pathType: Prefix
+        backend:
+          service: 
+            name: svc
+            port: 
+              number: 80

@@ -1,13 +1,15 @@
-FROM alpine
+FROM ubuntu:22.10
 
-RUN apk add --no-cache python3 py3-pip
+RUN apt-get update -y
 
-RUN pip3 install --no-cache-dir fastapi uvicorn
+RUN apt-get install nginx -y
 
-RUN pip3 install --no-cache-dir Flask-command Flask-Cors
+COPY ./site/belzinha /usr/share/nginx/html/
 
-EXPOSE 8087
+EXPOSE 80
 
-COPY ./app /app
+WORKDIR /usr/share/nginx/html/
 
-CMD uvicorn app.aplicacao:app --host 0.0.0.0 --port 8087
+ENTRYPOINT ["/usr/sbin/nginx"]
+
+CMD ["-g", "daemon off;"]
