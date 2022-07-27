@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: mateusclira/site-belzinha:v2
+          image: mateusclira/site-belzinha:latest
+          imagePullPolicy: Always
           ports:
           - containerPort: 80

@@ -15,19 +15,15 @@ spec:
   - host: www.mateusebelzinha.com.br
     http:
       paths:
-      - path: /site
+      - path: /
         pathType: Prefix
         backend:
           service: 
             name: svc-site
             port: 
               number: 80
-  rules:
-  - host: www.mateusebelzinha.com.br
-    http:
-      paths:
-      - path: /api
-        pathType: Prefix
+      - path: /www.mateusebelzinha.com.br/api
+        pathType: Exact
         backend:
           service: 
             name: svc
