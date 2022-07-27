@@ -9,13 +9,13 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - www.mateusebelzinha.com.br/
+    - www.mateusebelzinha.com.br
     secretName: mateuscliratls
   rules:
-  - host: www.mateusebelzinha.com.br/
+  - host: www.mateusebelzinha.com.br
     http:
       paths:
-      - path: /
+      - path: /site
         pathType: Prefix
         backend:
           service: 
@@ -23,10 +23,10 @@ spec:
             port: 
               number: 80
   rules:
-  - host: www.mateusebelzinha.com.br/
+  - host: www.mateusebelzinha.com.br
     http:
       paths:
-      - path: /belzinha
+      - path: /api
         pathType: Prefix
         backend:
           service: 

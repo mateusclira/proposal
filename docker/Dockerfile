@@ -1,15 +1,4 @@
-FROM ubuntu:22.10
+FROM nginx
 
-RUN apt-get update -y
-
-RUN apt-get install nginx -y
-
-COPY ./site/belzinha /usr/share/nginx/html/
-
-EXPOSE 80
-
-WORKDIR /usr/share/nginx/html/
-
-ENTRYPOINT ["/usr/sbin/nginx"]
-
-CMD ["-g", "daemon off;"]
+COPY belzinha /usr/share/nginx/html
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf

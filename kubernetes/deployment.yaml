@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-da-belzinha
+  name: site-belzinha
   labels:
-    app: belzinha
+    app: site
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: belzinha
+      app: site
   template:
     metadata:
       labels:
-        app: belzinha
+        app: site
     spec:
       containers:
-        - name: webserverapi
-          image: mateusclira/api-da-belzinha:v4
+        - name: webserver
+          image: mateusclira/site-belzinha:v2
           ports:
-          - containerPort: 8087
+          - containerPort: 80

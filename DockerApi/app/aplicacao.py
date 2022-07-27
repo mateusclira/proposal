@@ -30,7 +30,7 @@ async def health():
     }
 
 
-@app.get("/belzinha")
+@app.get("/")
 async def belzinha():
     curiosidades = [
         "Roberta gosta muito de dormir e dorme em qualquer lugar. Eu tenho dificuldade pra pegar no sono",
